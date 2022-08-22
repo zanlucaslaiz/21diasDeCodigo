@@ -2,14 +2,14 @@ html, body {
 	height: 100%;
 }
 body {
-	width: 100vw;
-    height: 100vh;
+	width: center;
+    height: center;
   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-	margin: 10%;
+	margin: none;
 	background: linear-gradient(#f2f2f6, #d3d3e7);
 }
 
