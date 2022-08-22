@@ -17,38 +17,66 @@
         <h1>Laiz Zanlucas</h1>
         <div class="calculadora">
             <h2>Calculadora</h2>
-            <p id="resultado">laiz</p>
+            <p id="resultado"></p>
             <table>
                 <tr>
-                    <td><button class="botão">C</button></tb>
-                    <td><button class="botão"><</button></tb>
-                    <td><button class="botão">/</button></tb>
-                    <td><button class="botão">x</button></tb>
+                    <td><button class="botão" onclick="clean()">C</button></tb>
+                    <td><button class="botão" onclick="back()"><</button></tb>
+                    <td><button class="botão" onclick="insert('/')">/</button></tb>
+                    <td><button class="botão" onclick="insert('*')">x</button></tb>
                 </tr>
                 <tr>
-                    <td><button class="botão">7</button></tb>
-                    <td><button class="botão">8</button></tb>
-                    <td><button class="botão">9</button></tb>
-                    <td><button class="botão">-</button></tb>
+                    <td><button class="botão" onclick="insert('7')">7</button></tb>
+                    <td><button class="botão" onclick="insert('8')">8</button></tb>
+                    <td><button class="botão" onclick="insert('9')">9</button></tb>
+                    <td><button class="botão" onclick="insert('-')">-</button></tb>
                 </tr>
                 <tr>
-                    <td><button class="botão">4</button></tb>
-                    <td><button class="botão">5</button></tb>
-                    <td><button class="botão">6</button></tb>
-                    <td><button class="botão">+</button></tb>
+                    <td><button class="botão" onclick="insert('4')">4</button></tb>
+                    <td><button class="botão" onclick="insert('5')">5</button></tb>
+                    <td><button class="botão" onclick="insert('6')">6</button></tb>
+                    <td><button class="botão" onclick="insert('+')">+</button></tb>
                 </tr>
                 <tr>
-                    <td><button class="botão">1</button></tb>
-                    <td><button class="botão">2</button></tb>
-                    <td><button class="botão">3</button></tb>
-                    <td rowspan="2"><button class="botão" style="height: 106px">=</button></tb>
+                    <td><button class="botão" onclick="insert('1')">1</button></tb>
+                    <td><button class="botão" onclick="insert('2')">2</button></tb>
+                    <td><button class="botão" onclick="insert('3')">3</button></tb>
+                    <td rowspan="2"><button class="botão" style="height: 106px" onclick="calcular()">=</button></tb>
                 </tr>
                 <tr>
-                    <td colspan="2"><button class="botão" style="width: 106px">0</button></tb>
-                    <td><button class="botão">.</button></tb>
+                    <td colspan="2"><button class="botão" style="width: 106px" onclick="insert('0')">0</button></tb>
+                    <td><button class="botão" onclick="inert('.')">.</button></tb>
                 </tr>
             </table>
         </div>
     </div>
+    <script>
+        function insert(num)
+        {
+            var numero = document.getElementById('resultado').innerHTML;   
+            document.getElementById('resultado').innerHTML = numero + num;      
+        }
+        function clean()
+        {
+            document.getElementById('resultado').innerHTML = ""
+        }
+        function back()
+        {
+            var resultado = document.getElementById('resultado').innerHTML;
+            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+        }
+        function calcular()
+        {
+            var resultado = document.getElementById('resultado').innerHTML;
+            if(resultado)
+            {
+                document.getElementById('resultado').innerHTML = eval(resultado);
+            }
+            else
+            {
+                document.getElementById('resultado').innerHTML = "nada";
+            }
+        }
+    </script>
 </body>
 </html>
