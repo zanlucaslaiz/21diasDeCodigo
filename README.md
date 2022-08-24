@@ -8,7 +8,7 @@
 # Dia 06 - Criar um card com efeito glassmorphism.
 # Dia 07 - Desenvolva um contador.
 # Dia 08 - Desenvolva um toggle que altere o tema para claro e escuro.
-# Dia 09 - Desenvolva uma animmação de loading...
+# Dia 09 - Desenvolva uma animação de loading...
 # Dia 10 - Utilize a lib Particle.js do JavaScript.
 # Dia 11 - Crie um layout de um formulario de login.
 # Dia 12 - Desenvolva uma galeria de imagens.
