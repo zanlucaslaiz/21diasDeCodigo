@@ -14,3 +14,10 @@
 # Dia 12 - Desenvolva uma galeria de imagens.
 # Dia 13 - Desenvolva um menu responsivo.
 # Dia 14 - Crie um formulário de quizzes.
+# Dia 15 - Desenvolva um site que exiba uma vitrine de produtos de um e-commerce ficticio (com nome de produtos, preço e imagens)
+# Dia 16 - Desenvolva um site utilizando alguma API pública.
+# Dia 17 - Desenvolva um site que capture os eventos do teclado e exiba na tela o evento e a tecla pressionada.
+# Dia 18 - Desenvolva um gerador de senhas aleatórias.
+# Dia 19 - Desenvolva um site que gere imagens aleatórias utilizando a API do Unplash.
+# Dia 20 - Desenvolva um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência.
+# Dia 21 - Desenvolva uma página para ser seu portifolio.
