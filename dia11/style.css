@@ -1,12 +1,21 @@
+:root{
+    --input-linear: linear-gradient(120deg,#FFC000,#E7E6E6, #7F7F7F);
+}
+
+h1{
+    font-family: Aboreto;
+    font-size: 50px;
+    color: #FFC000;
+}
+
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
 .login{
     height: 100vh;
-    background: linear-gradient(120deg,#FFC000,#E7E6E6, #7F7F7F);
+    background: var(--input-linear);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +35,6 @@ body{
 
 .login__title{
     margin-bottom: 32px;
-    color: black;
 }
 
 .login__form{
@@ -60,16 +68,24 @@ body{
     height: 1px;
     width: 0;
     margin-bottom: 16px;
-    background: linear-gradient(120deg,#FFC000,#E7E6E6, #7F7F7F);
+    background: var(--input-linear);
     transition: .3s ease-in-out;
+}
+
+.login__input:focus * .login__input-border::after {
+    width: 100%;
+}
+
+.login__submit:hover {
+    background-position: right;
 }
 
 .login__submit{
     height: 48px;
     width: 100%;
     outline: none;
-    background: linear-gradient(120deg,#FFC000,#E7E6E6, #7F7F7F);
-    background-size: 200%;
+    background: var(--input-linear);
+    background-size: 150%;
     margin-bottom: 32px;
     color: #7F7F7F;
     font-size: 16px;
