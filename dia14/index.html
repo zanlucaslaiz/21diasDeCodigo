@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Quizz</title>
+</head>
+<body>
+    <div class="container">	
+        <div class="row">
+            <div class="two-thirds column">
+            <h2>Eu nunca...</h2>
+    
+            <div id="progress_bar"></div>
+                <form class="questions_box">
+    
+                    <div id="question-1">
+                      <h2>Questão 1</h2>
+                        <h3>Qual o pais de origem de Devi?</h3>
+                        <input id="question-1-answer-a" type="radio" name="favelang" value=1> EUA<br>
+                        <input id="question-1-answer-b" type="radio" name="favelang" value=2> França<br>
+                        <input id="question-1-answer-c" type="radio" name="favelang" value=3> India<br>
+                        <div id="submit1" class="button">Enviar Resposta</div>
+                <div class="clearfix"></div>
+                    </div>
+    
+                   <div id="question-2">
+                       <h2>Questão 2</h2>
+                       <h3>Qual o nome das melhores amigas de Devi?</h3>
+                     <input id="question-2-answer-a" type="radio" name="favelang" value="1"> Kisha e Beth<br>
+                       <input id="question-2-answer-b" type="radio" name="favelang" value="2"> Lisa e Tahani<br>
+                       <input id="question-2-answer-c" type="radio" name="favelang" value="3"> Eleanor e Fabiola<br>
+                       <div id="submit2" class="button">Enviar Resposta</div>
+               <div class="clearfix"></div>
+                   </div>
+                  
+                   <div id="question-3">	
+                       <h2>Questão 3</h2>
+                       <h3>Quais traumas a protagonista carrega consigo?</h3>
+                     <input id="question-3-answer-a" type="radio" name="favelang" value="1"> Ela perder os avós em um acidente de avião.<br>
+                       <input id="question-3-answer-b" type="radio" name="favelang" value="2"> Ela perdeu o pai em um acidente de moto.<br>
+                       <input id="question-3-answer-c" type="radio" name="favelang" value="3"> Ela perdeu o pai em uma apresentação da escola e após isso ficou três meses paralisada.<br>
+                       <div id="submit3" class="button">Enviar Resposta</div>
+               <div class="clearfix"></div>
+                   </div>
+    
+             <div id="question-4">
+                <h2>Questão 4</h2>
+                <h3>A mãe de Eleanor supostamente trabalhava como atriz em cruzeiro, mas qual era a verdade?</h3>
+                <input id="question-1-answer-a" type="radio" name="favelang" value="1"> Ela havia sido demitida há três meses e estva trabalhando de garçonete em um restaurante de comida mexicana. <br>
+                <input id="question-1-answer-b" type="radio" name="favelang" value="2"> Ela havia deixado a carreira de atriz e agora era acompanhante.<br>
+                <input id="question-1-answer-c" type="radio" name="favelang" value="3"> Ela havia voltado para Ásia sem que Eleanor soubesse.<br>
+                <div id="submit4" class="button">Enviar Resposta</div>
+                <div class="clearfix"></div>
+              </div>
+    
+              <div id="question-5">
+                <h2>Questão 5</h2>
+                <h3>O que Mohan disse a filha para incentiva-la a tocar Harpa ao invés de guitarra?</h3>
+                <input id="question-1-answer-a" type="radio" name="favelang" value="1"> era o sonho dele antes de morrer, ve-la tocar harpa.<br>
+                <input id="question-1-answer-b" type="radio" name="favelang" value="2"> era uma tradição de familiar<br>
+                <input id="question-1-answer-c" type="radio" name="favelang" value="3"> Guitarra possui apenas seis cordas, e qualquer idiota poderia tocar, e que ela era muito especial para um guitarra boba.<br>
+                <div id="submit5" class="button">Enviar Resposta</div>
+                <div class="clearfix"></div>
+              </div>
+    
+             <div id="question-6"> 
+               <h2>Obrigado por responder a pesquisa!</h2>
+               <h3>Seu nivel de conhecimento de EU NUNCA... é: </h3>
+               <h1 id=printtotalscore></h1>
+               <p id=printscoreinfo></p>
+    
+             </div>
+    
+    
+                      
+                </form>
+    
+            </div>
+          </div>
+      </div>
+    
+      <script src="scripts.js"></script>
+    
+</body>
+</html>
