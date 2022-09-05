@@ -6,47 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 
-    <title>menu responsivo</title>
+    <title>Menu Responsivel</title>
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1>Logo</h1>
-            </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projeto</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                </ul>
-            </div>
-
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="imagem/menu.svg" alt=""></button>
-
-            </div>
-        </nav>
-
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projeto</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-            </ul>
-
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
+        <div class="overlay-content">
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Cliente</a>
+            <a href="#">Contatos</a>
         </div>
+    </div>
 
-    </header>
-    <script src="main.js"></script>
+    <button class="nav-button" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-2x">laiz</i>
+    </button>
 </body>
 </html>

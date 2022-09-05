@@ -1,0 +1,17 @@
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.topo{
+    background-color: #1d539e;
+    width: 1440px;
+    height: 450px;
+  }
